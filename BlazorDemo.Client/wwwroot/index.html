@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>BlazorDemo</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <app>Loading...</app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        function changeImage() {
+            var botImg = document.getElementById("bot");
+            var imgUrl = botImg.getAttribute("src");
+            if (imgUrl.indexOf("1") < 0) {
+                botImg.setAttribute("src", imgUrl.replace("2", "1"));
+            } else {
+                botImg.setAttribute("src", imgUrl.replace("1", "2"));
+            }
+        }
+    </script>
+</body>
+</html>

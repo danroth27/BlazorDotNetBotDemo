@@ -1,0 +1,37 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<div>
+    <img id="bot" src="/images/dotnet-bot-1.png" />
+</div>
+
+<button class="btn btn-primary" onclick="changeImage()">Click me</button>
+
+@*
+    <div>
+        <img id="bot" src="@imageUrl" />
+    </div>
+
+    <button class="btn btn-primary" onclick="@ChangeImage">Click me</button>
+
+    @functions {
+        string imageUrl = "/images/dotnet-bot-1.png";
+
+        public void ChangeImage()
+        {
+            if (imageUrl.Contains('1'))
+            {
+                imageUrl = imageUrl.Replace('1', '2');
+            }
+            else
+            {
+                imageUrl = imageUrl.Replace('2', '1');
+            }
+        }
+    }
+*@
